@@ -1,2 +1,10 @@
 venv/
 __pycache__/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+logs/
+models/
+.env
+commands.txt
+plan.txt
