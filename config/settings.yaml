@@ -1,0 +1,61 @@
+# Project Configuration
+project:
+  name: "ecommerce-analytics"
+  version: "1.0.0"
+
+# Data Paths
+paths:
+  raw_data: "data/raw"
+  bronze_layer: "data/bronze"
+  silver_layer: "data/silver"
+  gold_layer: "data/gold"
+  models: "models"
+  logs: "logs"
+
+# Data Files
+data_files:
+  orders: "olist_orders_dataset.csv"
+  order_items: "olist_order_items_dataset.csv"
+  customers: "olist_customers_dataset.csv"
+  products: "olist_products_dataset.csv"
+  sellers: "olist_sellers_dataset.csv"
+  payments: "olist_order_payments_dataset.csv"
+  reviews: "olist_order_reviews_dataset.csv"
+  geolocation: "olist_geolocation_dataset.csv"
+  category: "product_category_name_translation.csv"
+
+# Data Validation Rules
+validation:
+  min_rows:
+    orders: 90000
+    order_items: 100000
+    customers: 90000
+    products: 30000
+    sellers: 3000
+    payments: 100000
+    reviews: 90000
+    geolocation: 1000000
+    category: 70
+
+# Model Parameters
+models:
+  churn:
+    test_size: 0.2
+    random_state: 42
+    n_estimators: 100
+    max_depth: 10
+  
+  segmentation:
+    n_clusters: 4
+    random_state: 42
+
+# Azure Configuration (Placeholder)
+azure:
+  storage_account: "customeranalytics2409"
+  container_name: "ecommerce-data"
+  connection_string: "${AZURE_STORAGE_CONNECTION_STRING}"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

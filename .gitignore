@@ -8,3 +8,4 @@ models/
 .env
 commands.txt
 plan.txt
+src/test_azure_connection.py
