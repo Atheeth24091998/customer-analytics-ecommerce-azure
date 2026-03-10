@@ -10,8 +10,8 @@ The goal is to simulate how an analytics team in an e-commerce company would:
 - Identify growth and retention opportunities
 - Support decision-making with data
 
-At the current stage (Day 1–2), the focus is on **business understanding, data exploration,
-and KPI baseline creation**. Will learn the concepts and build in the next 10 days during my university holidays.
+The focus is on **business understanding, data exploration,
+and KPI baseline creation**. Will learn the concepts and build in the project during my university holidays.
 
 ---
 
